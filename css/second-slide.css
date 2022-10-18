@@ -104,3 +104,30 @@
     /* left: 50% !important; */
     right: 40% !important;
 }
+
+@media screen and (max-width: 640px) {
+    .splide__arrow--prev {
+      left: 5% !important;
+      top: 110% !important;
+    }
+  
+    .splide__arrow--next {
+      right: 8% !important;
+      top: 110% !important;
+    }
+  
+    .card {
+      width: 10rem !important;
+    }
+    .splide__pagination{
+        top: 106% !important;
+    }
+    /* .is-visible,
+    .splide__slide {
+      transform: none;
+      opacity: 1;
+    }
+    .splide__track{
+      width: auto;
+    } */
+  }
