@@ -273,7 +273,7 @@ body {
   }
 
   .splide__list {
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
     width: 100% !important;
     /* background-color: red; */
   }
