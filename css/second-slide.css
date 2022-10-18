@@ -1,0 +1,106 @@
+.card {
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 0 2em;
+}
+
+.card__image {
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    padding: 3px;
+    margin-bottom: 2em;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: 0.2em;
+}
+
+.card__name {
+    color: var(--color);
+}
+
+.card__text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1em 0;
+}
+
+.card__btn {
+    background-color: var(--color);
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    cursor: pointer;
+}
+
+.splide__track {
+    overflow: unset !important;
+}
+
+.is-visible,
+.splide__slide {
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.is-active {
+    transform: none;
+    opacity: 1;
+}
+
+
+.splide__pagination {
+    counter-reset: pagination-num;
+    position: absolute !important;
+    top: 118% !important;
+}
+.splide__pagination > li{
+    margin: 0 10px;
+}
+.splide__pagination__page:before {
+    counter-increment: pagination-num;
+    content: counter(pagination-num);
+    font-size: 25px !important;
+}
+
+.splide__arrow--prev {
+    top: 120% !important;
+    left: 40% !important;
+}
+
+.splide__arrow--next {
+    top: 120% !important;
+    /* left: 50% !important; */
+    right: 40% !important;
+}
