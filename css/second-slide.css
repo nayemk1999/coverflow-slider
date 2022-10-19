@@ -138,3 +138,22 @@ overflow-x: hidden !important;
       width: auto;
     } */
   }
+  
+  @media only screen and (max-width: 1500px) and (min-width: 768px) {
+  .splide__arrow--prev {
+      left: 38% !important;
+      top: 95% !important;
+      z-index:10 !important
+    }
+  
+    .splide__arrow--next {
+      right: 38% !important;
+      top: 95% !important;
+      z-index:10 !important
+    }
+  
+    .splide__pagination{
+        top: none;
+    }
+  }
+
