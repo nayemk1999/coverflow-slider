@@ -80,7 +80,7 @@
 }
 
 .splide{
-overflow: hidden !important;
+overflow-x: hidden !important;
 }
 .splide__pagination {
     counter-reset: pagination-num;
