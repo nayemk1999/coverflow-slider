@@ -1,117 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="/css/second-slide.css" />
     <title>NSL Slider</title>
-    <style>
+    <style></style>
+  </head>
 
-    </style>
-</head>
-
-<body>
+  <body>
     <div class="splide">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide card">
-                    <div class="card__image">
-                        <img src="/images/user3.jpg" alt="card image" />
-                    </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide card">
+            <div class="card__image">
+              <img src="/images/user3.jpg" alt="card image" />
+            </div>
 
-                    <div class="card__content">
-                        <span class="card__title">Web Developer</span>
-                        <span class="card__name">David Murphy</span>
-                        <p class="card__text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                            veritatis labore provident non tempora odio est sunt, ipsum
-                        </p>
-                        <button class="card__btn">View More</button>
-                    </div>
-                </li>
-                <li class="splide__slide card">
-                    <div class="card__image">
-                        <img src="/images/user4.jpg" alt="card image" />
-                    </div>
+            <div class="card__content">
+              <span class="card__title">Web Developer</span>
+              <span class="card__name">David Murphy</span>
+            </div>
+          </li>
+          <li class="splide__slide card">
+            <div class="card__image">
+              <img src="/images/user4.jpg" alt="card image" />
+            </div>
 
-                    <div class="card__content">
-                        <span class="card__title">Web Developer</span>
-                        <span class="card__name">David Murphy</span>
-                        <p class="card__text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                            veritatis labore provident non tempora odio est sunt, ipsum
-                        </p>
-                        <button class="card__btn">View More</button>
-                    </div>
-                </li>
-                <li class="splide__slide card">
-                    <div class="card__image">
-                        <img src="/images/user3.jpg" alt="card image" />
-                    </div>
+            <div class="card__content">
+              <span class="card__title">Web Developer</span>
+              <span class="card__name">David Murphy</span>
+            </div>
+          </li>
+          <li class="splide__slide card">
+            <div class="card__image">
+              <img src="/images/user3.jpg" alt="card image" />
+            </div>
 
-                    <div class="card__content">
-                        <span class="card__title">Web Developer</span>
-                        <span class="card__name">David Murphy</span>
-                        <p class="card__text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                            veritatis labore provident non tempora odio est sunt, ipsum
-                        </p>
-                        <button class="card__btn">View More</button>
-                    </div>
-                </li>
-                <li class="splide__slide card">
-                    <div class="card__image">
-                        <img src="/images/user3.jpg" alt="card image" />
-                    </div>
+            <div class="card__content">
+              <span class="card__title">Web Developer</span>
+              <span class="card__name">David Murphy</span>
+            </div>
+          </li>
+          <li class="splide__slide card">
+            <div class="card__image">
+              <img src="/images/user3.jpg" alt="card image" />
+            </div>
 
-                    <div class="card__content">
-                        <span class="card__title">Web Developer</span>
-                        <span class="card__name">David Murphy</span>
-                        <p class="card__text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                            veritatis labore provident non tempora odio est sunt, ipsum
-                        </p>
-                        <button class="card__btn">View More</button>
-                    </div>
-                </li>
-                <li class="splide__slide card">
-                    <div class="card__image">
-                        <img src="/images/user3.jpg" alt="card image" />
-                    </div>
+            <div class="card__content">
+              <span class="card__title">Web Developer</span>
+              <span class="card__name">David Murphy</span>
+            </div>
+          </li>
+          <li class="splide__slide card">
+            <div class="card__image">
+              <img src="/images/user3.jpg" alt="card image" />
+            </div>
 
-                    <div class="card__content">
-                        <span class="card__title">Web Developer</span>
-                        <span class="card__name">David Murphy</span>
-                        <p class="card__text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
-                            veritatis labore provident non tempora odio est sunt, ipsum
-                        </p>
-                        <button class="card__btn">View More</button>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <div class="card__content">
+              <span class="card__title">Web Developer</span>
+              <span class="card__name">David Murphy</span>
+            </div>
+          </li>
+        </ul>
+
+        <span class="page">
+          <span id="pre-index">1</span>
+          <span id="active-index" class="active">2</span>
+          <span id="next-index">3</span>
+        </span>
+      </div>
     </div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        new Splide(".splide", {
-            type: 'loop',
-            perPage: 6,
-            focus: 'center',
-            breakpoints: {
-                600: {
-                    perPage: 2,
-                    // height: '6rem',
-                },
-            },
-        }).mount();
+  <script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   new Splide(".splide", {
+    //     type: "loop",
+    //     perPage: 6,
+    //     focus: "center",
+    //     breakpoints: {
+    //       600: {
+    //         perPage: 2,
+    //         // height: '6rem',
+    //       },
+    //     },
+    //   }).mount();
+
+    // });
+    const splide = new Splide(".splide", {
+      type: "loop",
+      perPage: 6,
+      focus: "center",
+      breakpoints: {
+        600: {
+          perPage: 2,
+          // height: '6rem',
+        },
+      },
     });
-</script>
+    splide.on("active", function (item) {
+      const activeIndex = item.index + 1;
+      document.getElementById("active-index").innerText = activeIndex;
+      document.getElementById("pre-index").innerText = activeIndex - 1;
+      document.getElementById("next-index").innerText = activeIndex + 1;
 
+      let opacity = 0.01;
+      let anim_time = setInterval(function () {
+        if (opacity >= 1) {
+          clearInterval(anim_time);
+        }
+        document.getElementById("pre-index").style.opacity = opacity;
+        document.getElementById("next-index").style.opacity = opacity;
+        opacity += opacity * 0.1;
+      }, 10);
+
+      // const element = document.querySelector(".title");
+      // element.classList.add("animate__animated", "animate__fadeInRight");
+    });
+
+    // splide.on("inactive", function () {
+    //   const element = document.querySelector(".title");
+    //   element.classList.remove("animate__animated", "animate__fadeInRight");
+    // });
+
+    splide.mount();
+  </script>
 </html>
