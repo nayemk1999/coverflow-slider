@@ -66,6 +66,7 @@
 
 .splide__track {
     overflow: unset !important;
+    height: 100vh !important;
 }
 
 .is-visible,
@@ -85,7 +86,7 @@ overflow-x: hidden !important;
 .splide__pagination {
     counter-reset: pagination-num;
     position: absolute !important;
-    top: 118% !important;
+        top: 11% !important;
 }
 .splide__pagination > li{
     margin: 0 10px;
@@ -97,12 +98,12 @@ overflow-x: hidden !important;
 }
 
 .splide__arrow--prev {
-    top: 120% !important;
+    top: 55.5% !important;
     left: 40% !important;
 }
 
 .splide__arrow--next {
-    top: 120% !important;
+    top: 55.5% !important;
     /* left: 50% !important; */
     right: 40% !important;
 }
@@ -110,19 +111,19 @@ overflow-x: hidden !important;
 @media screen and (max-width: 640px) {
     .splide__arrow--prev {
       left: 5% !important;
-      top: 110% !important;
+      top: 79% !important;
     }
   
     .splide__arrow--next {
       right: 8% !important;
-      top: 110% !important;
+      top: 79% !important;
     }
   
     .card {
       width: 10rem !important;
     }
     .splide__pagination{
-        top: 106% !important;
+        top: 58% !important;
     }
     /* .is-visible,
     .splide__slide {
