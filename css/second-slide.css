@@ -79,7 +79,9 @@
     opacity: 1;
 }
 
-
+.splide{
+overflow: hidden !important;
+}
 .splide__pagination {
     counter-reset: pagination-num;
     position: absolute !important;
