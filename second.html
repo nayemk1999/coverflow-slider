@@ -107,9 +107,9 @@
     });
     splide.on("active", function (item) {
       const activeIndex = item.index + 1;
-      document.getElementById("active-index").innerText = activeIndex;
-      document.getElementById("pre-index").innerText = activeIndex - 1;
-      document.getElementById("next-index").innerText = activeIndex + 1;
+      document.getElementById("active-index").innerText = `0${activeIndex}`;
+      document.getElementById("pre-index").innerText = activeIndex - 1 > 0 ? `0${activeIndex - 1}` : activeIndex - 1;
+      document.getElementById("next-index").innerText = `0${activeIndex + 1}`;
 
       let opacity = 0.01;
       let anim_time = setInterval(function () {

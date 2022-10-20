@@ -162,8 +162,8 @@
     gap: 1rem; */
   display: flex;
   list-style: none;
-  gap: 1rem;
-  font-size: 2rem;
+  gap: 1.5rem;
+  font-size: 1rem;
   width: fit-content;
   border-style: hidden hidden solid hidden;
   text-align: center;
@@ -174,7 +174,7 @@
   color: brown;
   position: relative;
   border-style: hidden hidden solid hidden;
-  transform: scale(1.5) !important;
+  transform: scale(2) !important;
   margin-bottom: 8px;
 }
 .splide__pagination {
