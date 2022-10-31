@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Now Amazing Webpage</title>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="/slide.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Slick Slider</h1>
+      <div class="slider center">
+        <div class="slide">
+          <div class="cl cl-yellow"></div>
+        </div>
+        <div class="slide">
+          <div class="cl cl-blue"></div>
+        </div>
+        <div class="slide">
+          <div class="cl cl-red"></div>
+        </div>
+        <div class="slide">
+          <div class="cl cl-yellow"></div>
+        </div>
+        <div class="slide">
+          <div class="cl cl-blue"></div>
+        </div>
+        <div class="slide">
+          <div class="cl cl-red"></div>
+        </div>
+      </div>
+    </div>
+
+    <span class="page">
+      <span id="pre-index">-</span>
+      <span id="active-index" class="active">-</span>
+      <span id="next-index">-</span>
+    </span>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var $st = $(".pagination");
+        var $slickEl = $(".center");
+
+        $slickEl.slick({
+          centerMode: true,
+          centerPadding: "50px",
+          slidesToShow: 5,
+          focusOnSelect: true,
+          dots: true,
+          infinite: true,
+          customPaging: (i) => {
+            const activeIndex = i?.currentSlide + 1;
+            document.getElementById(
+              "active-index"
+            ).innerText = `0${activeIndex}`;
+            document.getElementById(
+              "pre-index"
+            ).innerText = `0${i?.slideCount}`;
+            document.getElementById("next-index").innerText =
+              i?.slideCount === activeIndex ? "01" : `0${activeIndex + 1}`;
+          },
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+        $(".center").on(
+          "afterChange",
+          function (event, { slideCount: count }, currentSlide, nextSlide) {
+            const activeIndex = currentSlide + 1;
+            // const activeIndex = item.index + 1;
+            document.getElementById(
+              "active-index"
+            ).innerText = `0${activeIndex}`;
+            document.getElementById("pre-index").innerText =
+              activeIndex - 1 > 0 ? `0${activeIndex - 1}` : `0${count}`;
+            document.getElementById("next-index").innerText =
+              count === currentSlide + 1 ? "01" : `0${activeIndex + 1}`;
+
+            let opacity = 0.01;
+            let anim_time = setInterval(function () {
+              if (opacity >= 1) {
+                clearInterval(anim_time);
+              }
+              document.getElementById("pre-index").style.opacity = opacity;
+              document.getElementById("next-index").style.opacity = opacity;
+              opacity += opacity * 0.1;
+            }, 10);
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

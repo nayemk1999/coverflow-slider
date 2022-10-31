@@ -1,0 +1,225 @@
+/* .slide-container{
+    background-color: #02b875;
+    height: 40vh;
+    padding:2rem 0rem;
+}
+.slick-dots {
+  display: none !important;
+}
+.slide-content{
+    margin: auto 0;
+}
+.slick-current {
+  transform: scaleY(1) !important;
+}
+
+.slick-arrow {
+  z-index: 9;
+}
+.slick-prev {
+  position: absolute;
+  left: 40% !important;
+  bottom: -15% !important;
+}
+.slick-next {
+  position: absolute;
+  right: 40% !important;
+  bottom: -15% !important;
+}
+
+.page {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1rem;
+  width: fit-content;
+  border-style: hidden hidden solid hidden;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.page > .active {
+  color: brown;
+  position: relative;
+  border-style: hidden hidden solid hidden;
+  transform: scale(2) !important;
+  margin-bottom: 8px;
+}
+.card {
+  max-width: 300px;
+  min-height: 250px;
+  background: #02b875;
+  padding: 30px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -12px,
+    rgb(0 0 0 / 30%) 0px 18px 36px -18px;
+}
+.card:nth-child(2) {
+  background: #4181ee;
+}
+.card:last-child {
+  background: #673ab7;
+}
+.card-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.card-content {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.card-btn {
+  all: unset;
+  display: block;
+  margin-left: auto;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 10px;
+  font-weight: 600;
+  transition: all 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+.card-btn:hover {
+  color: #02b875;
+  background: #fff;
+}
+.card:nth-child(2) .card-btn:hover {
+  color: #4181ee;
+  background: #fff;
+}
+.card:last-child .card-btn:hover {
+  color: #673ab7;
+  background: #fff;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+/*****************************************
+*  --------------------------------------*
+*  Vars                                  *
+*  --------------------------------------*
+*****************************************/
+
+/*****************************************
+*  --------------------------------------*
+*  General                               *
+*  --------------------------------------*
+*****************************************/
+
+body {
+  background: rgb(45, 43, 56);
+}
+
+/* .container {
+  padding: 50px;
+} */
+.page {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1rem;
+  width: fit-content;
+  border-style: hidden hidden solid hidden;
+  text-align: center;
+  margin: 2rem auto;
+  color: white;
+}
+
+.page > .active {
+  color: white;
+  position: relative;
+  border-style: hidden hidden solid hidden;
+  transform: scale(2) !important;
+  margin-bottom: 8px;
+}
+h1 {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.slick-arrow {
+  z-index: 9;
+}
+.slick-prev {
+  position: absolute;
+  left: 40% !important;
+  bottom: -20% !important;
+}
+.slick-next {
+  position: absolute;
+  right: 41% !important;
+  bottom: -20% !important;
+}
+.slick-dots {
+  display: none !important;
+}
+/*****************************************
+*  --------------------------------------*
+*  Slick                                 *
+*  --------------------------------------*
+*****************************************/
+
+.cl {
+  height: 200px;
+  padding: 10px;
+}
+
+.cl-yellow {
+  background: #f1c40f;
+}
+
+.cl-blue {
+  background: #3498db;
+}
+
+.cl-red {
+  background: #e74c3c;
+}
+
+.slick-active {
+  padding: 20px 0;
+}
+
+.slick-center {
+  transform: scaleY(1.5);
+  box-shadow: 1px 30px 10px lightcyan;
+}
+
+.slick-slide:not(.slick-active) {
+  margin: 20px 0;
+  visibility: hidden;
+}
+.slick-track {
+  display: flex;
+  justify-content: space-around;
+}
+.child {
+  width: 100%;
+}
+/* slick-slide slick-active */
+.slide:not(.slick-active) {
+  cursor: pointer;
+}
+.slick-slide {
+  margin: 0 1rem;
+}
+.slick-list {
+  padding: none !important;
+}
+/* .pagination {
+  text-align: center;
+  color: $white;
+  font-family: $raleway;
+  font-size: 1.2rem;
+} */
